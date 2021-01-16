@@ -1,20 +1,17 @@
-import { NavigationContainer, DefaultTheme, DarkTheme } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import * as React from 'react';
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import * as React from "react";
+import { Root } from "native-base";
+import { RootStackParamList } from "../types";
+import LinkingConfiguration from "./LinkingConfiguration";
 
-import { RootStackParamList } from '../types';
-import LinkingConfiguration from './LinkingConfiguration';
-
-import LoginScreen from '../screens/LoginScreen';
-import RegistrationScreen from '../screens/RegistrationScreen';
-import NotFoundScreen from '../screens/NotFoundScreen';
-
-
+import LoginScreen from "../screens/LoginScreen";
+import RegistrationScreen from "../screens/RegistrationScreen";
+import NotFoundScreen from "../screens/NotFoundScreen";
 
 export default function Navigation() {
   return (
-    <NavigationContainer
-      linking={LinkingConfiguration}>
+    <NavigationContainer linking={LinkingConfiguration}>
       <RootNavigator />
     </NavigationContainer>
   );
@@ -26,10 +23,16 @@ const Stack = createStackNavigator<RootStackParamList>();
 
 function RootNavigator() {
   return (
-    <Stack.Navigator screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="Login" component={LoginScreen} />
-      <Stack.Screen name="Registration" component={RegistrationScreen} />
-      <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
-    </Stack.Navigator>
+    <Root>
+      <Stack.Navigator>
+        <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="Registration" component={RegistrationScreen} />
+        <Stack.Screen
+          name="NotFound"
+          component={NotFoundScreen}
+          options={{ title: "Oops!", headerShown: false  }}
+        />
+      </Stack.Navigator>
+    </Root>
   );
 }
