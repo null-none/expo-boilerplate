@@ -14,7 +14,7 @@ import {
 import getTheme from "../theme/components";
 import platform from "../theme/variables/platform";
 
-export default function LoginScreen() {
+export default function LoginScreen({ navigation }) {
   return (
     <StyleProvider style={getTheme(platform)}>
       <Container>
@@ -52,7 +52,9 @@ export default function LoginScreen() {
             </Row>
           </Grid>
         </Content>
-        <Button dark transparent onPress={() => {}} full>
+        <Button dark transparent onPress={() => {
+          navigation.navigate('Registration')
+        }} full>
           <Text> Don't have an account? Sign Up</Text>
         </Button>
       </Container>

@@ -24,13 +24,13 @@ const Stack = createStackNavigator<RootStackParamList>();
 function RootNavigator() {
   return (
     <Root>
-      <Stack.Navigator screenOptions={{ headerShown: false }}>
+      <Stack.Navigator>
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Registration" component={RegistrationScreen} />
         <Stack.Screen
           name="NotFound"
           component={NotFoundScreen}
-          options={{ title: "Oops!" }}
+          options={{ title: "Oops!", headerShown: false  }}
         />
       </Stack.Navigator>
     </Root>
