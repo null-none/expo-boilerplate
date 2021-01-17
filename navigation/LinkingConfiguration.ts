@@ -6,6 +6,8 @@ export default {
     screens: {
       Login: 'Login',
       Registration: 'Registration',
+      Settings: 'Settings',
+      App: 'App',
       NotFound: '*',
     },
   },
