@@ -38,7 +38,12 @@ export default function LoginScreen({ navigation }) {
             </Row>
             <Row>
               <Col>
-                <Button onPress={() => {}} block>
+                <Button
+                  onPress={() => {
+                    navigation.navigate("App");
+                  }}
+                  block
+                >
                   <Text> Sign In</Text>
                 </Button>
               </Col>
@@ -52,9 +57,14 @@ export default function LoginScreen({ navigation }) {
             </Row>
           </Grid>
         </Content>
-        <Button dark transparent onPress={() => {
-          navigation.navigate('Registration')
-        }} full>
+        <Button
+          dark
+          transparent
+          onPress={() => {
+            navigation.navigate("Registration");
+          }}
+          full
+        >
           <Text> Don't have an account? Sign Up</Text>
         </Button>
       </Container>
