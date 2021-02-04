@@ -3671,10 +3671,10 @@ expo-application@~2.4.1:
   resolved "https://registry.yarnpkg.com/expo-application/-/expo-application-2.4.1.tgz#f8eb4a3a05a0b8a8f38f2e981f587a815945b685"
   integrity sha512-VHDvXz55LIYdLoE1aR0AFycB1jz4ggbMToUbKAbCEjro+PdUNm/Gj8gQeFgH6wL2oAztQH4qJ+uiOwrw8SFK+Q==
 
-expo-asset@~8.2.1:
-  version "8.2.1"
-  resolved "https://registry.yarnpkg.com/expo-asset/-/expo-asset-8.2.1.tgz#1b69724f29ca4260805f2e6368c4428d8ad90cc6"
-  integrity sha512-M97jZU83Gm6wWGkrCwTzDVlufQCmnrCbmW4AMOH6xl3XhwOpgsQ6m6xrwT0Sq1tto7JUuL0tPbB9vb9L7yLfyg==
+expo-asset@~8.2.1, expo-asset@~8.2.2:
+  version "8.2.2"
+  resolved "https://registry.yarnpkg.com/expo-asset/-/expo-asset-8.2.2.tgz#2b24faccfb7d895097623317bb0555901bbc4e7c"
+  integrity sha512-Ckiok7BFB6WjKNifa1b3mx2zGY8DnV2CttSQMTnMd6+0EOx1qOMsZDNkryJVpVOtpAetCdHWd5s9f2CdmosowA==
   dependencies:
     blueimp-md5 "^2.10.0"
     invariant "^2.2.4"
