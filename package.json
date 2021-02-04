@@ -42,7 +42,7 @@
     "@types/react": "~16.9.35",
     "@types/react-native": "~0.63.47",
     "jest-expo": "~40.0.0",
-    "typescript": "~4.0.0"
+    "typescript": "~4.1.3"
   },
   "private": true
 }
